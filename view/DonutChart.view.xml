@@ -1,0 +1,18 @@
+<mvc:View
+    controllerName="zc6.fi1401.mod.zc6fi1401.controller.DonutChart"
+    xmlns:t="sap.ui.table"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:u="sap.ui.unified"
+    xmlns:c="sap.ui.core"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns="sap.m"
+>
+    <viz:VizFrame
+        class="sapUiContentPadding"
+        xmlns="sap.viz"
+        id="idPieChart"
+        vizType="donut"
+        height="100%"
+        width="100%"
+    />
+</mvc:View>

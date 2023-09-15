@@ -1,0 +1,51 @@
+<mvc:View xmlns:cards="sap.f.cards"
+    controllerName="zc6.fi1401.mod.zc6fi1401.controller.Main"
+    xmlns:t="sap.ui.table"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:u="sap.ui.unified"
+    xmlns:c="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns="sap.m"
+    height="100%"
+>
+    <Page
+        showHeader="false"
+        enableScrolling="true"
+        class="sapUiResponsiveContentPadding"
+    >
+        <content>
+            <l:VerticalLayout class="sapUiContentPadding myCustomLayout">
+                <mvc:XMLView viewName="zc6.fi1401.mod.zc6fi1401.view.Table" />
+                <FlexBox height="100%" width="100%" direction="Column"
+                    class="myCustomCarouselFlexBox">
+                    <FlexBox justifyContent="End" alignContent="Center" height="2.75rem">
+                        <Button text="새로고침" class="sapUiSmallMarginEnd" press=".onRefresh"
+                            icon="sap-icon://refresh"
+                            type="Transparent"
+                            ></Button>
+                    </FlexBox>
+                    <Carousel
+                        loop="false"
+                        width="100%"
+                        height="100%"
+                        pageIndicatorPlacement="Top"
+                    >
+                        <mvc:XMLView
+                            viewName="zc6.fi1401.mod.zc6fi1401.view.DonutChart"
+                            height="100%"
+                        />
+                        <mvc:XMLView
+                            viewName="zc6.fi1401.mod.zc6fi1401.view.BarChart"
+                            height="100%"
+                        />
+                        <mvc:XMLView
+                            viewName="zc6.fi1401.mod.zc6fi1401.view.LineChart"
+                            height="100%"
+                        />
+                    </Carousel>
+                </FlexBox>
+            </l:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>

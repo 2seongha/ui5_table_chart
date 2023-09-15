@@ -1,0 +1,51 @@
+/* Enter your custom styles here */
+
+.hideScroll {
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll !important;
+}
+
+.myCustomLayout {
+  height: 100%;
+  width: 100%;
+}
+
+.myCustomLayout > div{
+  height: 50%;
+}
+
+.myCustomLayout > div > div{
+  overflow: hidden;
+  border-radius: .75rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(43, 89, 109, 0.32) 0px 2px 16px 0px;
+}
+
+.myCustomInput[data-editable='edittrue'] input {
+  box-shadow: 1px 1px 1px 1px rgba(119, 119, 119, 0.541) inset;
+  background-color: rgb(240, 240, 240);
+  outline: none;
+}
+
+.myCustomInput[data-editable='editfalse'] input {
+  background-color: white;
+}
+
+.myCustomCarouselFlexBox{
+  position: relative;
+}
+
+.myCustomCarouselFlexBox > div:first-child {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.myCustomCarouselFlexBox > div:first-child > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myCustomCarouselFlexBox > div:last-child {
+  height: 100%;
+}
